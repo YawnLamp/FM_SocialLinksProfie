@@ -1,0 +1,79 @@
+:root {
+  --primary-text: hsl(0, 0%, 100%);
+  --secondary-text: hsl(75, 94%, 57%);
+  --background-grey700: hsl(0, 0%, 20%);
+  --background-grey800: hsl(0, 0%, 12%);
+  --background-grey900: hsl(0, 0%, 8%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-grey900);
+  color: var(--primary-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 0;
+}
+
+.card {
+  background-color: var(--background-grey800);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2.5rem 2rem;
+}
+
+.first-text {
+  line-height: 0.5;
+  padding-top: 0.75rem;
+}
+
+.first-text p {
+  color: var(--secondary-text);
+}
+
+button {
+  background-color: var(--background-grey700);
+  color: var(--primary-text);
+  padding: 15px 100px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: var(--background-grey900);
+  color: var(--secondary-text);
+}
+
+.button-set {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 0.75rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
